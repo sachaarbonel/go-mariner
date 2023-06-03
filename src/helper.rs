@@ -1,7 +1,7 @@
-use std::{collections::HashMap, rc::Rc};
+use std::collections::HashMap;
 
 use gosyn::{
-    ast::{Call, Declaration, ExprStmt, Expression, File, FuncDecl, Ident, Statement},
+    ast::{Declaration, Expression, File, Statement},
     token::Operator,
 };
 use std::collections::HashSet;
@@ -89,7 +89,7 @@ fn visit_expression(expr: &Expression, used_variables: &mut HashSet<String>) {
                 visit_expression(arg, used_variables);
             }
         }
-        _ => (), // Add more cases as needed
+        _ => (), // TODO: Add more cases as needed
     }
 }
 
@@ -126,7 +126,6 @@ func main() {
 
     //     #[test]
     //     fn test_collect_used_variables() {
-    //         // Create sample Go code input as a string
     //         let code = r#"
     // package main
 
@@ -143,14 +142,11 @@ func main() {
     // }
     // "#;
 
-    //         // 2. Call parse_go_code_str to parse the Go code
     //         let mut parser = Parser::from(code);
     //         let file = parser.parse_file().unwrap();
 
-    //         // Test the collect_used_variables function with the parsed File struct
-    //         let used_variables = collect_used_variables(&file);
+    // let (used_variables, declared_variables)= collect_used_variables(&file);
 
-    //         // Assert that the expected variables are found
     //         assert!(used_variables.contains("a"));
     //         assert!(used_variables.contains("b"));
     //         assert!(used_variables.contains("x"));
