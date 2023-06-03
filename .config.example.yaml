@@ -1,0 +1,3 @@
+rules:
+  - name: "unused_variable"
+    enabled: true
