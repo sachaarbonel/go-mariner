@@ -1,5 +1,5 @@
 
-# GoMariner
+# GoMariner (WIP)
 
 GoMariner is a simple and extensible linter for the Golang programming language. It is written in Rust and uses a Golang parser to analyze Golang code and identify potential issues based on a predefined set of rules.
 
