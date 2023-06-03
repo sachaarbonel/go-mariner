@@ -4,14 +4,13 @@ mod issue;
 mod linter;
 mod rules;
 
-use clap::{Parser, Subcommand};
+use clap::Parser;
 use config::{Config, RuleConfig};
 use linter::Linter;
 use serde_yaml;
 use std::fs;
 use std::io::Read;
 use std::path::PathBuf;
-
 
 #[derive(Parser)]
 #[clap(name = "golang_linter", version = "0.1.0", about = "A Golang Linter")]
