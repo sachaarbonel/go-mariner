@@ -47,11 +47,8 @@ GoMariner is released under the MIT license
 
 - [x] Unused variables: Detect and report variables that are declared but never used in the code.
 - [ ] Shadowing: Detect and report variable shadowing, where a variable declared in an inner scope has the same name as a variable in an outer scope, which can lead to hard-to-find bugs.
-- [ ] 
 - [ ] Formatting: Enforce a consistent code style and formatting rules as specified in the Go language specification and Effective Go guidelines.
-
 - [ ] Error handling: Ensure that error values returned by functions are always checked, and recommend proper error handling techniques.
-
 - [ ] Dead code: Identify and report unused functions, types, constants, and other dead code that does not contribute to the program's functionality.
 
 What else?
